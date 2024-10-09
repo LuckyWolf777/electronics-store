@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sapsanb1
+    hikari:
+      schema: electronics-store
+    username: postgres
+    password: 29082021
+  jpa:
+    hibernate:
+      ddl-auto: update
+  flyway:
+    baseline-on-migrate: true
+    validate-on-migrate: false
+    default-schema: electronics-store
